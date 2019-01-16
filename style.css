@@ -9,6 +9,14 @@ body {
   min-width: 500px;
 }
 
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 900px) {
   .content {
     width: 80vw;
