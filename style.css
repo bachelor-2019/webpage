@@ -1,12 +1,33 @@
 body {
+  background-color: #2a2a2e;
+  color: #f9f9fa;
   font-family: sans-serif;
   margin: 0;
 }
 
-.content {
-  margin: 40px auto;
+:root {
+  --half: 0.5rem;
+  --single: 1rem;
+  --double: 2rem;
+  --quad: 4rem;
+}
+
+.margin-tb-quad {
+  margin-top: var(--quad);
+  margin-bottom: var(--quad);
+}
+
+.margin-rl-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.width-half-screen {
   width: 50vw;
-  min-width: 500px;
+}
+
+.min-width-quad {
+  min-width: var(--quad);
 }
 
 .flex {
@@ -15,6 +36,14 @@ body {
 
 .space-between {
   justify-content: space-between;
+}
+
+.border-top-1px {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+a {
+  color: #3c9dff;
 }
 
 @media screen and (max-width: 900px) {
