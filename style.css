@@ -30,6 +30,10 @@ body {
   min-width: var(--quad);
 }
 
+.margin-bottom-single {
+  margin-bottom: var(--single);
+}
+
 .flex {
   display: flex;
 }
