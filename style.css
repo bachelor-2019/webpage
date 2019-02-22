@@ -50,6 +50,11 @@ a {
   color: #3c9dff;
 }
 
+.list {
+  display: flex;
+  flex-flow: column;
+}
+
 @media screen and (max-width: 900px) {
   .content {
     width: 80vw;
