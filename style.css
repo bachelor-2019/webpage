@@ -1,3 +1,7 @@
+/**
+ * Base
+ */
+
 body {
   background-color: #2a2a2e;
   color: #f9f9fa;
@@ -10,6 +14,117 @@ body {
   --single: 1rem;
   --double: 2rem;
   --quad: 4rem;
+  --border-color: rgba(255,255,255,0.2);
+}
+
+
+
+/**
+ * Border
+ */
+
+.border-top-1px {
+  border-top: 1px solid var(--border-color);
+}
+
+.bordr-bottom-1px {
+  border-bottom: 1px solid var(--border-color);
+}
+
+
+
+/**
+ * Flex
+ */
+
+.flex {
+  display: flex;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-align-items-center {
+  align-items: center;
+}
+
+.flex-justify-start {
+  justify-content: flex-start;
+}
+
+.flex-justify-space-between {
+  justify-content: space-between;
+}
+
+.flex-justify-space-around {
+  justify-content: space-around;
+}
+
+.flex-flow-row {
+  flex-flow: row;
+}
+
+.flex-flow-column {
+  flex-flow: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+
+a {
+  color: #3c9dff;
+}
+
+.list {
+  display: flex;
+  flex-flow: column;
+}
+
+
+
+/**
+ * Size
+ */
+
+.height-single {
+  height: var(--single);
+}
+
+.height-double {
+  height: var(--double);
+}
+
+.width-full {
+  width: 100vw;
+}
+
+.width-half-screen {
+  width: 50vw;
+}
+
+.min-width-quad {
+  min-width: var(--quad);
+}
+
+
+
+/**
+ * Margin
+ */
+
+.margin-top-single {
+  margin-top: var(--single);
+}
+
+.margin-top-double {
+  margin-top: var(--double);
+}
+
+.margin-bottom-single {
+  margin-bottom: var(--single);
 }
 
 .margin-tb-quad {
@@ -22,38 +137,25 @@ body {
   margin-right: auto;
 }
 
-.width-half-screen {
-  width: 50vw;
+
+
+/**
+ * Position
+ */
+
+.fixed-top {
+  position: fixed;
+  top: 0;
 }
 
-.min-width-quad {
-  min-width: var(--quad);
+.fixed-left {
+  position: fixed;
+  left: 0;
 }
 
-.margin-bottom-single {
-  margin-bottom: var(--single);
-}
-
-.flex {
-  display: flex;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.border-top-1px {
-  border-top: 1px solid rgba(255,255,255,0.2);
-}
-
-a {
-  color: #3c9dff;
-}
-
-.list {
-  display: flex;
-  flex-flow: column;
-}
+/**
+ * Media queries
+ */
 
 @media screen and (max-width: 900px) {
   .content {
