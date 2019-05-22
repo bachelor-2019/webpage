@@ -142,6 +142,10 @@ a {
   margin-right: var(--single);
 }
 
+.margin-right-double {
+  margin-right: var(--double);
+}
+
 .margin-top-single {
   margin-top: var(--single);
 }
@@ -164,6 +168,15 @@ a {
   margin-right: auto;
 }
 
+
+
+/**
+ * Padding
+ */
+
+.padding-single {
+  padding: var(--single);
+}
 
 
 /**
