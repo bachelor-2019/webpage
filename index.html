@@ -8,55 +8,105 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div id="top-bar" class="flex flex-align-items-center fixed-top fixed-left height-double background-l1 padding-single">
-			<h1 class="margin-top-zero margin-bottom-zero margin-right-double">
+		<header id="top-bar" class="Top-Bar">
+			<div class="Top-Bar__Hamburger" tabindex="0">
+				≡
+			</div>
+			<h1 class="Top-Bar__Title">
 				Goodtech Monitoring - Gruppe 29
 			</h1>
-			<nav class="flex flex-row flex-align-items-center">
-				<a class="margin-right-single" href="#members">Gruppemedlemmer</a>
-				<a class="margin-right-single" href="#prosjektskisse">Prosjektskisse</a>
-				<a class="margin-right-single" href="#forprosjekt">Forprosjekt</a>
-				<a class="margin-right-single" href="#prosjektrapport">Prosjektrapport</a>
+			<nav class="Top-Bar__Navigation">
+				<a class="Button-Link" href="#sammendrag">
+					Sammendrag
+				</a>
+				<a class="Button-Link" href="#medlemmer">
+					Gruppemedlemmer
+				</a>
+				<a class="Button-Link" href="#dokumenter">
+					Dokumenter
+				</a>
 			</nav>
-		</div>
-		<div class="margin-tb-quad margin-rl-auto width-half-screen min-width-quad margin-top-double">
-			<section id="sammendrag" class="margin-bottom-single">
-				Dette bachelorprosjektet er skrevet ved OsloMet - storbyuniversitetet i samarbeid med Goodtech AS. Goodtech Monitoring er et overvåknings- og visualiseringsverktøy for Goodtech sine MES-systemer. Goodtech Monitoring inkluderes i MES-en til Goodtech som en integrert modul, og hjelper dem oppdage og reagere på feil i systemene deres ute hos kundene deres.
+		</header>
+		<main class="Content">
+			<section class="Section" id="sammendrag">
+				<img class="Section__Splash" src="./splash.png">
+				Dette bachelorprosjektet er skrevet ved
+				OsloMet - storbyuniversitetet i samarbeid med Goodtech AS.
+				Goodtech Monitoring er et overvåknings- og
+				visualiseringsverktøy for Goodtech sine MES-systemer. Goodtech
+				Monitoring inkluderes i MES-en til Goodtech som en integrert
+				modul, og hjelper dem oppdage og reagere på feil i systemene
+				deres ute hos kundene deres.
 			</section>
-			<section id="members" class="margin-bottom-single border-top-1px">
-				<h2>Gruppemedlemmer</h2>
-				<ul class="list">
-						<li>
-							<span class="first-name">Christoffer-Theodor</span>
-							<span class="last-name">Arntzen</span>
-						</li>
-						<li>
-							<span class="first-name">Tommy</span>
-							<span class="last-name">Abelsen</span>
-						</li>
-						<li>
-							<span class="first-name">Victor</span>
-							<span class="middle-name">Nascimento</span>
-							<span class="last-name">Bakke</span>
-						</li>
-				</ul>
+			<section class="Section" id="medlemmer">
+				<h2 class="Section__Title">Gruppemedlemmer</h2>
+				<div class="Group-Member">
+					<span class="Group-Member__First-Name">
+						Christoffer-Theodor
+					</span>
+					<span class="Group-Member__Last-Name">
+						Arntzen
+					</span>
+					<span class="Group-Member__Bio">
+						gikk på medier- og kommunikasjon VGS. Han tok opp
+						fysikk og matte i form av forkurs over et år for å
+						starte på et ingeniørstudie der førstevalget var
+						byggingeniør. Etter et år på denne studieretningen
+						skiftet han til dataingeniør ved OsloMet
+						(tidligere HiOA).
+					</span>
+				</div>
+				<div class="Group-Member">
+					<span class="Group-Member__First-Name">
+						Tommy
+					</span>
+					<span class="Group-Member__Last-Name">
+						Abelsen
+					</span>
+					<span class="Group-Member__Bio">
+						har gjennom studiene jobbet som studentveileder for
+						Orakeltjenesten ved OsloMet, vært studentassistent i
+						fagene “Programmering” og “Programutvikling”, og har
+						holdt introduksjonskurs til førsteårsstudenter ved
+						Institutt for informasjonsteknologi. Han har tidligere
+						erfaring med utvikling av loggsystemer og
+						datavisualisering fra hans sommerjobb hos Hafslund Nett
+						i 2018.
+					</span>
+				</div>
+				<div class="Group-Member">
+					<span class="Group-Member__First-Name">
+						Victor
+					</span>
+					<span class="Group-Member__Middle-Name">
+						Nascimento
+					</span>
+					<span class="Group-Member__Last-Name">
+						Bakke
+					</span>
+					<span class="Group-Member__Bio">
+						har fagbrev som dataelektroniker, og begynte studiene
+						sine på HiOA på lignende måte som Christoffer ved å ta
+						forkurs først. Han har jobbet for Coop Norge Handels
+						IT-avdeling i 4 år med fokus på overvåking av
+						IT-infrastruktur i Coop. Ved siden av hovedoppgavene
+						hans hos Coop har han også programmert flere
+						forskjellige verktøy brukt internt i Coop IT.
+					</span>
+				</div>
 			</section>
-			<section id="dokumenter" class="border-top-1px">
-				<div id="prosjektskisse" class="border-top-1px margin-bottom-single">
-					<h2>Prosjektskisse</h2>
-					<a href="Prosjektskisse.pdf">Link til Prosjektskisse</a>
-				</div>
-
-				<div id="forprosjekt" class="border-top-1px margin-bottom-single">
-					<h2>Forprosjekt</h2>
-					<a href="./Forprosjekt.pdf">Link til Forprosjekt</a>
-				</div>
-
-				<div id="prosjektrapport" class="border-top-1px margin-bottom-single">
-					<h2>Prosjektrapport</h2>
-					<a href="./Bacheloroppgave - Goodtech Monitoring.pdf">Link til Prosjektrapport</a>
-				</div>
+			<section class="Section" id="dokumenter">
+				<h2 class="Section__Title">Dokumenter</h2>
+				<a class="Document-Link" href="Prosjektskisse.pdf">
+					Last ned Prosjektskisse
+				</a>
+				<a class="Document-Link" href="./Forprosjekt.pdf">
+					Last ned Forprosjekt
+				</a>
+				<a class="Document-Link" href="./Bacheloroppgave - Goodtech Monitoring.pdf">
+					Last ned Prosjektrapport
+				</a>
 			</section>
-		</div>
+		</main>
 	</body>
 </html>
