@@ -61,7 +61,7 @@ body {
 }
 
 .Top-Bar__Title {
-	--font-size: initial;
+	--font-size: 150%;
 	font-size: var(--font-size);
 	margin-top: 0;
 	margin-bottom: 0;
