@@ -2,17 +2,6 @@
  * Base
  */
 
-body {
-	background-color: var(--background-color);
-	color: var(--text-color);
-	font-family: var(--font-family);
-	margin: 0;
-}
-
-* {
-	box-sizing: border-box;
-}
-
 :root {
 	--half: 0.5rem;
 	--single: 1rem;
@@ -25,12 +14,23 @@ body {
 	--background-color-alt: #f9f9fa;
 	--text-color: #36363b;
 	--text-color-alt: #73737d;
-	--font-family: sans-serif;
+	--font-family: Roboto, sans-serif;
 
 	--button-text-color: var(--text-color);
 	--button-background-color: #4f4f56;
 	--button-hover-text-color: #fff;
 	--button-hover-background-color: #74747e;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-family: var(--font-family);
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 
@@ -95,7 +95,11 @@ body {
 .Top-Bar__Hamburger {
 	--display: none;
 	display: var(--display);
-	font-size: 200%;
+	font-size: 250%;
+	font-family: "Material Icons", sans-serif;
+}
+.Top-Bar__Hamburger::before {
+	content: 'menu';
 }
 .Top-Bar__Navigation > *:not(:last-child) {
 	border-right: 1px solid rgba(255,255,255, 0.2);
